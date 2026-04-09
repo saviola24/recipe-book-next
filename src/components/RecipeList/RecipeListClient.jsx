@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import RecipeList from './RecipeList'
-import styles from './RecipeListClient.module.css'
+import styles from './recipeListClient.module.css'
+import recipeList from './RecipeList'
 
 export default function RecipeListClient({ initialRecipes }) {
   const [orderedRecipes, setOrderedRecipes] = useState(initialRecipes)
@@ -22,7 +22,7 @@ export default function RecipeListClient({ initialRecipes }) {
           Reverse order
         </button>
       </div>
-      <RecipeList recipes={orderedRecipes} />
+      <recipeList recipes={orderedRecipes} />
     </>
   )
 }

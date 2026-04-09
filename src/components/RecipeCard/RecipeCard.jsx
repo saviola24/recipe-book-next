@@ -1,18 +1,18 @@
-'use client'
+'use client';   // obligatoire pour useState
 
-import { useState } from 'react'
-import styles from './RecipeCard.module.css'
+import { useState } from 'react';
+import styles from './RecipeCard.module.css';
 
 export default function RecipeCard({ recipe }) {
-  const [pinned, setPinned] = useState(false)
+  const [pinned, setPinned] = useState(false);
 
   return (
     <article className={`${styles.card} ${pinned ? styles.pinned : ''}`}>
-      {/* <img
+      <img
         className={styles.image}
         src={recipe.image}
         alt={recipe.name}
-      /> */}
+      />
       <div className={styles.body}>
         <h2 className={styles.name}>{recipe.name}</h2>
         <span className={styles.badge}>{recipe.category}</span>
@@ -26,5 +26,5 @@ export default function RecipeCard({ recipe }) {
         </button>
       </div>
     </article>
-  )
+  );
 }

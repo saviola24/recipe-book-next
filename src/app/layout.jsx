@@ -1,14 +1,14 @@
-import './globals.css'
+import './globals.css';
 
 export const metadata = {
   title: 'Recipe Book',
-  description: 'A simple recipe book app',
-}
+  description: 'Un livre de recettes simple',
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>{children}</body>
     </html>
-  )
+  );
 }
