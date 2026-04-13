@@ -94,7 +94,6 @@ a.secondary {
   border-color: var(--button-secondary-border);
 }
 
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
@@ -139,4 +138,79 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+}
+
+.header {
+  padding: 30px 20px 20px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #040813;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.toggle{
+  padding: 12px 24px;
+  background-color: #030612;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+}
+
+.toggle:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(30, 64, 175, 0.3);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 20px 0 24px 0;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  border: 2px solid #e2e8f0;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.filterButton:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.activeFilter {
+  background-color: #020921 !important;
+  color: white !important;
+  border-color: #000208 !important;
 }

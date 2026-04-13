@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import styles from './recipeListClient.module.css'
-import recipeList from './RecipeList'
+// import recipeList from './RecipeList'
 
 export default function RecipeListClient({ initialRecipes }) {
   const [orderedRecipes, setOrderedRecipes] = useState(initialRecipes)
