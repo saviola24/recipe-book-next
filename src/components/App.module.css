@@ -27,7 +27,7 @@
   align-items: flex-start;
   justify-content: space-between;
   background-color: var(--foreground);
-  padding: 120px 60px;
+  padding: 55px 60px;
 }
 
 .intro {
@@ -141,7 +141,7 @@ a.secondary {
 }
 
 .header {
-  padding: 30px 20px 20px 20px;
+  padding: 30px 20px 15px 20px;
   background-color: #ffffff;
   border-bottom: 1px solid #e2e8f0;
 }
@@ -191,7 +191,7 @@ a.secondary {
   gap: 12px;
   justify-content: center;
   padding: 0 20px;
-  margin: 20px 0 24px 0;
+  margin: 10px 0 20px 0;
 }
 
 .filterButton {
